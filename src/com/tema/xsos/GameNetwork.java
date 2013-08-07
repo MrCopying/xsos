@@ -13,4 +13,9 @@ public class GameNetwork extends Game {
         Main.exit();
     }
     
+    @Override
+    public void playTurn(char player) {
+        // TODO: ...
+    }
+    
 }

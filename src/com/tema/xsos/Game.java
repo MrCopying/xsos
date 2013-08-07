@@ -2,7 +2,7 @@
 package com.tema.xsos;
 
 
-public class Game {
+public abstract class Game {
     
     private final Field field;
     
@@ -29,9 +29,7 @@ public class Game {
         return this.field.setCell(line, column, player);
     }
     
-    public void playTurn(char player) {
-        // Dummy
-    }
+    public abstract void playTurn(char player);
     
     public boolean isGameEnd() {
         char playerWinner = Field.EMPTY;
